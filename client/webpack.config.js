@@ -12,7 +12,7 @@ module.exports = () => {
     // Entry point for files
     entry: {
       main: './src/js/index.js',
-      install: './src/js/install.js'
+      install: './src/js/install.js',
     },
     // Output for our bundles
     output: {
@@ -20,11 +20,11 @@ module.exports = () => {
       path: path.resolve(__dirname, 'dist'),
     },
     plugins: [
-      // Webpack plugin that generates our html file and injects our bundles. 
+      // Webpack plugin that generates our html file and injects our bundles.
       new HtmlWebpackPlugin({
         template: './index.html',
         title: 'Text Editor',
-        favicon: './favicon.ico'
+        favicon: './favicon.ico',
       }),
       // Injects our custom service worker
       new InjectManifest({
@@ -66,7 +66,10 @@ module.exports = () => {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
-              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
+              plugins: [
+                '@babel/plugin-proposal-object-rest-spread',
+                '@babel/transform-runtime',
+              ],
             },
           },
         },
