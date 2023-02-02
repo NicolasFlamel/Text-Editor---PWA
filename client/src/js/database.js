@@ -7,7 +7,7 @@ const initDb = async () =>
         console.log('jate database already exists');
         return;
       }
-      db.createObjectStore('jate', { keyPath: 'id'});
+      db.createObjectStore('jate', { keyPath: 'id' });
       console.log('jate database created');
     },
   });
