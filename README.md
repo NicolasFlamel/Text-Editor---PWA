@@ -8,7 +8,7 @@ This is a text editor that runs in the browser that meets the PWA criteria. It f
 
 - Have Nodejs installed (I used v16.18)
 - Install npm dependencies
-    - use 'npm install' on terminal once navigated to folder
+  - use 'npm install' on terminal once navigated to folder
 
 ## Usage
 
@@ -16,7 +16,7 @@ Navigate to the root directory of the project in your terminal and install the d
 
 ![Project Preview](./assets/images/project-preview-browser.png)
 
-## Heroku Link 
+## Heroku Link
 
 [Link to application deployed on Heroku](https://text-editor-pwa-3000.herokuapp.com/)
 
